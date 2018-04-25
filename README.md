@@ -12,5 +12,23 @@ Department of Microbiology, UH<br>
 <p>Once R has finished installing, we install RStudio:</p>
 <p><strong>Windows Vista/7/8/10:</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.exe">https://download1.rstudio.org/RStudio-1.1.447.exe</a><br>
 <strong>Mac OS X 10.6+ (64-bit):</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.dmg">https://download1.rstudio.org/RStudio-1.1.447.dmg</a></p>
-<p>temotmotmot</p>
+<h2 id="mg-rast">MG-RAST</h2>
+<h3 id="the-mg-rast-pipeline">The MG-RAST pipeline</h3>
+<p>|CONTINUE|</p>
+<h3 id="the-mg-rast-metagenome-page">The MG-RAST metagenome page</h3>
+<ul>
+<li>Go through an example</li>
+</ul>
+<p>|CONTINUE|</p>
+<h3 id="exercise-1-browsing-and-downloading-data-from-mg-rast">Exercise 1: browsing and downloading data from MG-RAST</h3>
+<ol>
+<li>Go to: <a href="https://www.mg-rast.org/">https://www.mg-rast.org/</a></li>
+<li>Click “download”</li>
+<li>Click “search website”</li>
+<li>In the top-left of the page, make a search for a metagenome of interest
+<ul>
+<li>Make sure that “seq type” = shotgun metagenome NOT amplicon metagenome</li>
+</ul>
+</li>
+</ol>
 
