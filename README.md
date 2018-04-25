@@ -9,15 +9,18 @@ Department of Microbiology, UH<br>
 <strong>Mac OS X 10.6 (Snow Leopard) - 10.8 (Mountain Lion):</strong> <a href="https://cran.rstudio.com/bin/macosx/R-3.2.1-snowleopard.pkg">https://cran.rstudio.com/bin/macosx/R-3.2.1-snowleopard.pkg</a><br>
 <strong>Mac OS X 10.9 (Mavericks) and higher:</strong> <a href="https://cran.rstudio.com/bin/macosx/R-3.3.3.pkg">https://cran.rstudio.com/bin/macosx/R-3.3.3.pkg</a><br>
 <strong>Mac OS X 10.11 (El Capitan) and higher</strong> <a href="https://cran.rstudio.com/bin/macosx/R-3.5.0.pkg">https://cran.rstudio.com/bin/macosx/R-3.5.0.pkg</a></p>
-<p>Once R has finished installing, we install RStudio:</p>
+<p>Once R has finished installing, you can then install RStudio:</p>
 <p><strong>Windows Vista/7/8/10:</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.exe">https://download1.rstudio.org/RStudio-1.1.447.exe</a><br>
 <strong>Mac OS X 10.6+ (64-bit):</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.dmg">https://download1.rstudio.org/RStudio-1.1.447.dmg</a></p>
 <h2 id="mg-rast">MG-RAST</h2>
+<p><a href="https://www.mg-rast.org/">https://www.mg-rast.org/</a></p>
 <h3 id="the-mg-rast-pipeline">The MG-RAST pipeline</h3>
-<p>|CONTINUE|</p>
+<p><img src="https://lh3.googleusercontent.com/0rRPfGciIP61f-3Qq_ZvqtvxtPUzoEx0jmnrI7jrH7iOLqVLYeKkMgWi6R_YE_Ov--13V3bPOTEP" alt="enter image description here"></p>
 <h3 id="the-mg-rast-metagenome-page">The MG-RAST metagenome page</h3>
 <ul>
-<li>Go through an example</li>
+<li>Go through an example:</li>
+<li><a href="https://www.mg-rast.org/mgmain.html?mgpage=project&amp;project=394c626efe6d67703833343537">https://www.mg-rast.org/mgmain.html?mgpage=project&amp;project=394c626efe6d67703833343537</a></li>
+<li></li>
 </ul>
 <p>|CONTINUE|</p>
 <h3 id="exercise-1-browsing-and-downloading-data-from-mg-rast">Exercise 1: browsing and downloading data from MG-RAST</h3>
