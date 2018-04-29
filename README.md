@@ -1,4 +1,5 @@
-<h1 id="day-6---metagenomics-in-rstudio">Day 6 - Metagenomics in RStudio</h1>
+<h1 id="introduction-to-bioinformatics-for-microbiologists">Introduction to bioinformatics for microbiologists</h1>
+<h2 id="day-6---introduction-to-metagenomics--r">Day 6 - Introduction to metagenomics &amp; R</h2>
 <p><strong>by Igor S. Pessi</strong><br>
 <em>Arctic Microbial Ecology<br>
 Department of Microbiology, UH<br>
@@ -12,18 +13,7 @@ Department of Microbiology, UH<br>
 <p>Once R has finished installing, you can then install RStudio:</p>
 <p><strong>Windows Vista/7/8/10:</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.exe">https://download1.rstudio.org/RStudio-1.1.447.exe</a><br>
 <strong>Mac OS X 10.6+ (64-bit):</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.dmg">https://download1.rstudio.org/RStudio-1.1.447.dmg</a></p>
-<h2 id="mg-rast">MG-RAST</h2>
-<p><a href="https://www.mg-rast.org/">https://www.mg-rast.org/</a></p>
-<h3 id="the-mg-rast-pipeline">The MG-RAST pipeline</h3>
-<p><img src="https://lh3.googleusercontent.com/0rRPfGciIP61f-3Qq_ZvqtvxtPUzoEx0jmnrI7jrH7iOLqVLYeKkMgWi6R_YE_Ov--13V3bPOTEP" alt="enter image description here"></p>
-<h3 id="the-mg-rast-metagenome-page">The MG-RAST metagenome page</h3>
-<ul>
-<li>Go through an example:</li>
-<li><a href="https://www.mg-rast.org/mgmain.html?mgpage=project&amp;project=394c626efe6d67703833343537">https://www.mg-rast.org/mgmain.html?mgpage=project&amp;project=394c626efe6d67703833343537</a></li>
-<li></li>
-</ul>
-<p>|CONTINUE|</p>
-<h3 id="exercise-1-browsing-and-downloading-data-from-mg-rast">Exercise 1: browsing and downloading data from MG-RAST</h3>
+<h2 id="exercise-1-browsing-and-downloading-data-from-mg-rast">Exercise 1: browsing and downloading data from MG-RAST</h2>
 <ol>
 <li>Go to: <a href="https://www.mg-rast.org/">https://www.mg-rast.org/</a></li>
 <li>Click “download”</li>
