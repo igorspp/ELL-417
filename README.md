@@ -6,17 +6,17 @@ Department of Microbiology, UH<br>
 <a href="mailto:igor.pessi@helsinki.fi">igor.pessi@helsinki.fi</a></em></p>
 <h2 id="section"></h2>
 <h3 id="recommended-literature">Recommended literature</h3>
-<h3 id="metagenomics">Metagenomics</h3>
+<h4 id="metagenomics">Metagenomics</h4>
 <ul>
 <li><a href="https://www.nature.com/articles/nbt.3935">https://www.nature.com/articles/nbt.3935</a></li>
 </ul>
-<h3 id="r-and-rstudio">R and RStudio</h3>
+<h4 id="r-and-rstudio">R and RStudio</h4>
 <ul>
 <li><a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf</a></li>
 <li><a href="https://kannu.csc.fi/s/Xk2jIQT7wiB3H1c/download">https://kannu.csc.fi/s/Xk2jIQT7wiB3H1c/download</a></li>
 </ul>
 <h2 id="section-1"></h2>
-<h2 id="installing-r-and-rstudio">Installing R and RStudio</h2>
+<h3 id="installing-r-and-rstudio">Installing R and RStudio</h3>
 <p>First we need to install R. Just download below the appropriate version for your computer and follow the instructions:</p>
 <p><strong>Windows:</strong> <a href="https://cran.rstudio.com/bin/windows/base/R-3.5.0-win.exe">https://cran.rstudio.com/bin/windows/base/R-3.5.0-win.exe</a><br>
 <strong>Mac OS X 10.6 (Snow Leopard) - 10.8 (Mountain Lion):</strong> <a href="https://cran.rstudio.com/bin/macosx/R-3.2.1-snowleopard.pkg">https://cran.rstudio.com/bin/macosx/R-3.2.1-snowleopard.pkg</a><br>
@@ -29,13 +29,26 @@ Department of Microbiology, UH<br>
 <h3 id="activity-1-browsing-and-downloading-data-from-mg-rast">Activity 1: browsing and downloading data from MG-RAST</h3>
 <ol>
 <li>Go to <a href="https://www.mg-rast.org/">https://www.mg-rast.org/</a></li>
-<li>Click “download”</li>
-<li>Click “search website”</li>
+<li>Click <em>download</em></li>
+<li>Click <em>search website</em></li>
 <li>In the top-left of the page, search for a metagenome of interest (e.g. cow rumen)</li>
 <li>Go through the search results and select a study
 <ul>
 <li>Make sure that <strong>seq type</strong> is <em>shotgun metagenome</em> NOT <em>amplicon metagenome</em></li>
-<li>If you want you can narrow the search using the <em>Refine Search</em> box in the right-hand of the page (<strong>field</strong> = <em>seq type</em>, <strong>term</strong> = <em>shotgun metagenome</em>; and click <em>add</em>)</li>
+<li>If you want you can narrow the search using the <em>Refine Search</em> box in the right-hand of the page (e.g. <strong>field</strong> = <em>seq type</em>, <strong>term</strong> = <em>shotgun metagenome</em>)</li>
+</ul>
+</li>
+<li>In the study page, take a moment to familiarize yourself with the project
+<ul>
+<li>How many samples are there? What are the differences between them?</li>
+</ul>
+</li>
+<li>For each sample, go to the results page and:
+<ul>
+<li>Check results</li>
+<li>Download the <em>Subsystems</em> functional annotation (download CSV)</li>
+<li>Download the <em>phylum level</em> taxonomic annotation (download CSV)</li>
+<li><strong>Metadata???</strong></li>
 </ul>
 </li>
 </ol>
