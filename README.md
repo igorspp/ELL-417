@@ -9,9 +9,11 @@ Department of Microbiology, UH<br>
 <ul>
 <li><a href="https://www.nature.com/articles/nbt.3935">https://www.nature.com/articles/nbt.3935</a></li>
 </ul>
-<p><strong>R and RStudio</strong><br>
-<a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf</a><br>
-<a href="https://kannu.csc.fi/s/Xk2jIQT7wiB3H1c/download">https://kannu.csc.fi/s/Xk2jIQT7wiB3H1c/download</a></p>
+<h3 id="r-and-rstudio">R and RStudio</h3>
+<ul>
+<li><a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf</a></li>
+<li><a href="https://kannu.csc.fi/s/Xk2jIQT7wiB3H1c/download">https://kannu.csc.fi/s/Xk2jIQT7wiB3H1c/download</a></li>
+</ul>
 <h2 id="installing-r-and-rstudio">Installing R and RStudio</h2>
 <p>First we need to install R. Just download below the appropriate version for your computer and follow the instructions:</p>
 <p><strong>Windows:</strong> <a href="https://cran.rstudio.com/bin/windows/base/R-3.5.0-win.exe">https://cran.rstudio.com/bin/windows/base/R-3.5.0-win.exe</a><br>
