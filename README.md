@@ -19,7 +19,7 @@ Department of Microbiology, UH<br>
 <p>Once R has finished installing, you can then install RStudio:</p>
 <p><strong>Windows Vista/7/8/10:</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.exe">https://download1.rstudio.org/RStudio-1.1.447.exe</a><br>
 <strong>Mac OS X 10.6+ (64-bit):</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.dmg">https://download1.rstudio.org/RStudio-1.1.447.dmg</a></p>
-<h3 id="activity-1-browsing-and-downloading-data-from-mg-rast">Activity 1: browsing and downloading data from MG-RAST</h3>
+<h2 id="activity-1-browsing-and-downloading-data-from-mg-rast">Activity 1: browsing and downloading data from MG-RAST</h2>
 <ol>
 <li>Go to: <a href="https://www.mg-rast.org/">https://www.mg-rast.org/</a></li>
 <li>Click “download”</li>
