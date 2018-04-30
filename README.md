@@ -5,7 +5,7 @@
 Department of Microbiology, UH<br>
 <a href="mailto:igor.pessi@helsinki.fi">igor.pessi@helsinki.fi</a></em></p>
 <h2 id="section"></h2>
-<h2 id="recommended-literature">Recommended literature</h2>
+<h3 id="recommended-literature">Recommended literature</h3>
 <h3 id="metagenomics">Metagenomics</h3>
 <ul>
 <li><a href="https://www.nature.com/articles/nbt.3935">https://www.nature.com/articles/nbt.3935</a></li>
@@ -26,7 +26,7 @@ Department of Microbiology, UH<br>
 <p><strong>Windows Vista/7/8/10:</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.exe">https://download1.rstudio.org/RStudio-1.1.447.exe</a><br>
 <strong>Mac OS X 10.6+ (64-bit):</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.dmg">https://download1.rstudio.org/RStudio-1.1.447.dmg</a></p>
 <h2 id="section-2"></h2>
-<h2 id="activity-1-browsing-and-downloading-data-from-mg-rast">Activity 1: browsing and downloading data from MG-RAST</h2>
+<h3 id="activity-1-browsing-and-downloading-data-from-mg-rast">Activity 1: browsing and downloading data from MG-RAST</h3>
 <ol>
 <li>Go to <a href="https://www.mg-rast.org/">https://www.mg-rast.org/</a></li>
 <li>Click “download”</li>
