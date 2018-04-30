@@ -30,7 +30,7 @@ Once R has finished installing, you can then install RStudio:
 **Windows Vista/7/8/10:** https://download1.rstudio.org/RStudio-1.1.447.exe
 **Mac OS X 10.6+ (64-bit):** https://download1.rstudio.org/RStudio-1.1.447.dmg
 
-### Activity 1: browsing and downloading data from MG-RAST
+## Activity 1: browsing and downloading data from MG-RAST
 1. Go to: https://www.mg-rast.org/
 2. Click "download"
 3. Click "search website"
@@ -39,5 +39,5 @@ Once R has finished installing, you can then install RStudio:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc0MjA3ODc3XX0=
+eyJoaXN0b3J5IjpbLTEzMjgyMDI4MDAsOTc0MjA3ODc3XX0=
 -->
