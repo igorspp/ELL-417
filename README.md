@@ -1,6 +1,6 @@
 <h1 id="introduction-to-bioinformatics-for-microbiologists">Introduction to bioinformatics for microbiologists</h1>
 <h1 id="day-6---introduction-to-metagenomics--r">Day 6 - Introduction to metagenomics &amp; R</h1>
-<p><strong>by Igor S. Pessi</strong><br>
+<p><strong>by Dr. Igor S. Pessi</strong><br>
 <em>Arctic Microbial Ecology<br>
 Department of Microbiology, UH<br>
 <a href="mailto:igor.pessi@helsinki.fi">igor.pessi@helsinki.fi</a></em></p>
