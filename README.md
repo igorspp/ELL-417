@@ -6,7 +6,9 @@ Department of Microbiology, UH<br>
 <a href="mailto:igor.pessi@helsinki.fi">igor.pessi@helsinki.fi</a></em></p>
 <h2 id="recommended-literature">Recommended literature</h2>
 <h3 id="metagenomics">Metagenomics</h3>
-<p><a href="https://www.nature.com/articles/nbt.3935">https://www.nature.com/articles/nbt.3935</a></p>
+<ul>
+<li><a href="https://www.nature.com/articles/nbt.3935">https://www.nature.com/articles/nbt.3935</a></li>
+</ul>
 <p><strong>R and RStudio</strong><br>
 <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf</a><br>
 <a href="https://kannu.csc.fi/s/Xk2jIQT7wiB3H1c/download">https://kannu.csc.fi/s/Xk2jIQT7wiB3H1c/download</a></p>
