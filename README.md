@@ -25,14 +25,17 @@ Department of Microbiology, UH<br>
 <p>Once R has finished installing, we can then install RStudio:</p>
 <p><strong>Windows Vista/7/8/10:</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.exe">https://download1.rstudio.org/RStudio-1.1.447.exe</a><br>
 <strong>Mac OS X 10.6+ (64-bit):</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.dmg">https://download1.rstudio.org/RStudio-1.1.447.dmg</a></p>
+<h2 id="section-2"></h2>
 <h2 id="activity-1-browsing-and-downloading-data-from-mg-rast">Activity 1: browsing and downloading data from MG-RAST</h2>
 <ol>
-<li>Go to: <a href="https://www.mg-rast.org/">https://www.mg-rast.org/</a></li>
+<li>Go to <a href="https://www.mg-rast.org/">https://www.mg-rast.org/</a></li>
 <li>Click “download”</li>
 <li>Click “search website”</li>
-<li>In the top-left of the page, make a search for a metagenome of interest
+<li>In the top-left of the page, search for a metagenome of interest (e.g. cow rumen)</li>
+<li>Go through the search results and select a study
 <ul>
-<li>Make sure that “seq type” = shotgun metagenome NOT amplicon metagenome</li>
+<li>Make sure that <strong>seq type</strong> is <em>shotgun metagenome</em> NOT <em>amplicon metagenome</em></li>
+<li>If you want you can narrow the search using the <em>Refine Search</em> box in the right-hand of the page (<strong>field</strong> = <em>seq type</em>, <strong>term</strong> = <em>shotgun metagenome</em>; and click <em>add</em>)</li>
 </ul>
 </li>
 </ol>
