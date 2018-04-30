@@ -1,9 +1,10 @@
-<p>Introduction to bioinformatics for microbiologists</p>
+<p><em><strong>ELL-417: Introduction to bioinformatics for microbiologists</strong></em></p>
 <h1 id="day-6---introduction-to-metagenomics--r">Day 6 - Introduction to metagenomics &amp; R</h1>
 <p><strong>by Dr. Igor S. Pessi</strong><br>
 <em>Arctic Microbial Ecology<br>
 Department of Microbiology, UH<br>
 <a href="mailto:igor.pessi@helsinki.fi">igor.pessi@helsinki.fi</a></em></p>
+<h2 id="section"></h2>
 <h2 id="recommended-literature">Recommended literature</h2>
 <h3 id="metagenomics">Metagenomics</h3>
 <ul>
