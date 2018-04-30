@@ -25,7 +25,7 @@ First we need to install R. Just download below the appropriate version for your
 **Mac OS X 10.9 (Mavericks) and higher:** https://cran.rstudio.com/bin/macosx/R-3.3.3.pkg
 **Mac OS X 10.11 (El Capitan) and higher** https://cran.rstudio.com/bin/macosx/R-3.5.0.pkg
 
-Once R has finished installing, you can then install RStudio:
+Once R has finished installing, we can then install RStudio:
 
 **Windows Vista/7/8/10:** https://download1.rstudio.org/RStudio-1.1.447.exe
 **Mac OS X 10.6+ (64-bit):** https://download1.rstudio.org/RStudio-1.1.447.dmg
@@ -39,5 +39,6 @@ Once R has finished installing, you can then install RStudio:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjgyMDI4MDAsOTc0MjA3ODc3XX0=
+eyJoaXN0b3J5IjpbLTg4ODI5NzE0OSwtMTMyODIwMjgwMCw5Nz
+QyMDc4NzddfQ==
 -->
