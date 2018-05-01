@@ -12,6 +12,9 @@ Department of Microbiology, UH<br>
 <li><a href="https://academic.oup.com/bib/article/13/6/696/194123">https://academic.oup.com/bib/article/13/6/696/194123</a></li>
 <li><a href="https://www.nature.com/news/mining-the-microbial-dark-matter-1.17774">https://www.nature.com/news/mining-the-microbial-dark-matter-1.17774</a></li>
 <li><a href="https://www.nature.com/articles/nrmicro3468">https://www.nature.com/articles/nrmicro3468</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0958166911007245">https://www.sciencedirect.com/science/article/pii/S0958166911007245</a></li>
+<li><a href="https://www.nature.com/articles/nmeth.4458">https://www.nature.com/articles/nmeth.4458</a></li>
+<li><a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-017-3918-9">https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-017-3918-9</a></li>
 </ul>
 <h4 id="r-and-rstudio">R and RStudio</h4>
 <ul>
