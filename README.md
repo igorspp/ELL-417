@@ -9,6 +9,9 @@ Department of Microbiology, UH<br>
 <h4 id="metagenomics">Metagenomics</h4>
 <ul>
 <li><a href="https://www.nature.com/articles/nbt.3935">https://www.nature.com/articles/nbt.3935</a></li>
+<li><a href="https://academic.oup.com/bib/article/13/6/696/194123">https://academic.oup.com/bib/article/13/6/696/194123</a></li>
+<li><a href="https://www.nature.com/news/mining-the-microbial-dark-matter-1.17774">https://www.nature.com/news/mining-the-microbial-dark-matter-1.17774</a></li>
+<li><a href="https://www.nature.com/articles/nrmicro3468">https://www.nature.com/articles/nrmicro3468</a></li>
 </ul>
 <h4 id="r-and-rstudio">R and RStudio</h4>
 <ul>
@@ -49,6 +52,7 @@ Department of Microbiology, UH<br>
 <li>Download the <em>Subsystems</em> functional annotation (download CSV)</li>
 <li>Download the <em>phylum level</em> taxonomic annotation (download CSV)</li>
 <li><strong>Metadata???</strong></li>
+<li><strong>Rename files??</strong></li>
 </ul>
 </li>
 </ol>
