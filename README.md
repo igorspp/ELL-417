@@ -5,13 +5,15 @@
 Department of Microbiology, UH<br>
 <a href="mailto:igor.pessi@helsinki.fi">igor.pessi@helsinki.fi</a></em></p>
 <h3 id="program-of-the-day">Program of the day</h3>
-<p>30’ – Overview of metagenomics<br>
-30’ – Activity 1<br>
-15’ – Break<br>
-30’ – Overview of R<br>
-30’ – Activity 2<br>
-15’  –  Break<br>
-30’ – Activity 3</p>
+<ul>
+<li>30’ – Overview of metagenomics</li>
+<li>30’ – Activity 1</li>
+<li>15’ – Break</li>
+<li>30’ – Overview of R</li>
+<li>30’ – Activity 2</li>
+<li>15’  –  Break</li>
+<li>30’ – Activity 3</li>
+</ul>
 <h3 id="installing-r-and-rstudio">Installing R and RStudio</h3>
 <p>First we need to install R. Just download below the appropriate version for your computer and follow the instructions:</p>
 <p><strong>Windows:</strong> <a href="https://cran.rstudio.com/bin/windows/base/R-3.5.0-win.exe">https://cran.rstudio.com/bin/windows/base/R-3.5.0-win.exe</a><br>
