@@ -1,5 +1,5 @@
-<p><em><strong>ELL-417: Introduction to bioinformatics for microbiologists</strong></em></p>
-<h1 id="day-6---introduction-to-metagenomics--r">Day 6 - Introduction to metagenomics &amp; R</h1>
+<h1 id="introduction-to-bioinformatics-for-microbiologists">Introduction to bioinformatics for microbiologists</h1>
+<h2 id="day-6---introduction-to-metagenomics--r">Day 6 - Introduction to metagenomics &amp; R</h2>
 <p><strong>by Dr. Igor S. Pessi</strong><br>
 <em>Arctic Microbial Ecology<br>
 Department of Microbiology, UH<br>
@@ -12,8 +12,7 @@ Department of Microbiology, UH<br>
 30’ – Activity 2<br>
 15’  –  Break<br>
 30’ – Activity 3</p>
-<h2 id="section"></h2>
-<h3 id="installing-r-and-rstudio">Installing R and RStudio</h3>
+<h2 id="installing-r-and-rstudio">Installing R and RStudio</h2>
 <p>First we need to install R. Just download below the appropriate version for your computer and follow the instructions:</p>
 <p><strong>Windows:</strong> <a href="https://cran.rstudio.com/bin/windows/base/R-3.5.0-win.exe">https://cran.rstudio.com/bin/windows/base/R-3.5.0-win.exe</a><br>
 <strong>Mac OS X 10.6 (Snow Leopard) – 10.8 (Mountain Lion):</strong> <a href="https://cran.rstudio.com/bin/macosx/R-3.2.1-snowleopard.pkg">https://cran.rstudio.com/bin/macosx/R-3.2.1-snowleopard.pkg</a><br>
@@ -22,10 +21,10 @@ Department of Microbiology, UH<br>
 <p>Once R has finished installing, we can then install RStudio:</p>
 <p><strong>Windows Vista/7/8/10:</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.exe">https://download1.rstudio.org/RStudio-1.1.447.exe</a><br>
 <strong>Mac OS X 10.6+ (64-bit):</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.dmg">https://download1.rstudio.org/RStudio-1.1.447.dmg</a></p>
-<h2 id="section-1"></h2>
-<h3 id="activity-1-browsing-and-downloading-data-from-mg-rast">Activity 1: Browsing and downloading data from MG-RAST</h3>
+<h2 id="activity-1">Activity 1</h2>
+<h3 id="browsing-and-downloading-data-from-mg-rast">Browsing and downloading data from MG-RAST</h3>
 <ol>
-<li>First create a folder called <em>metagenomics_course</em> (no spaces!) somewhere in your computer. This is where the data we will use and generate later (<em>i.e.</em> the working directory) will be stored.</li>
+<li>First create a folder  <em>metagenomics_course</em> (no spaces!) somewhere in your computer. This is will be our working directory, that is, where the data we will use and generate later will be stored.</li>
 <li>Go to <a href="https://www.mg-rast.org/">https://www.mg-rast.org/</a></li>
 <li>Click <em>download</em></li>
 <li>Click <em>search website</em></li>
@@ -57,8 +56,8 @@ Department of Microbiology, UH<br>
 </ul>
 </li>
 </ol>
-<h2 id="section-2"></h2>
-<h3 id="activity-2-understanding-the-very-basics-of-r">Activity 2: Understanding the <em>very</em> basics of R</h3>
+<h2 id="activity-2">Activity 2</h2>
+<h3 id="playing-around-with-r-and-rstudio">Playing around with R and RStudio</h3>
 <p><em><strong>DISCLAIMER:</strong> The only way to become proficient in R is by typing things, making mistakes, and trying again. So I strongly advise that, in the examples below, you type the commands instead of copying and pasting them. You have been warned!</em></p>
 <p>In this activity we will do some basic operations to get a feeling of how R works. We start by, of course, launching RStudio.</p>
 <p>You then need to tell RStudio where your working directory is located. This is the <em>metagenomics_course</em> folder where you have put the data you downloaded from MG-RAST in the previous activity.</p>
@@ -96,7 +95,7 @@ HINT: try typing <em>help(rnorm)</em></p>
 <pre><code>plot(x, y)
 </code></pre>
 <p>That was a <strong>very</strong> basic overview of R. In activity 3, we will learn how to import external data and generate slightly more complex plots.</p>
-<h2 id="section-3"></h2>
-<h3 id="activity-3-plotting-metagenomic-profiles-in-rstudio">Activity 3: Plotting metagenomic profiles in RStudio</h3>
+<h2 id="activity-3">Activity 3:</h2>
+<h3 id="plotting-metagenomic-profiles-in-rstudio">Plotting metagenomic profiles in RStudio</h3>
 <p>See wrangling wit R pdf</p>
 
