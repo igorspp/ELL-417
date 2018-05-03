@@ -25,7 +25,7 @@ Department of Microbiology, UH<br>
 <strong>Mac OS X 10.6+ (64-bit):</strong> <a href="https://download1.rstudio.org/RStudio-1.1.447.dmg">https://download1.rstudio.org/RStudio-1.1.447.dmg</a></p>
 <h3 id="activity-1-browsing-and-downloading-data-from-mg-rast">Activity 1: Browsing and downloading data from MG-RAST</h3>
 <ol>
-<li>First create a folder named <em>metagenomics_course</em> (no spaces!) somewhere in your computer. This is will be our working directory, that is, where the data we will use and generate later will be stored.</li>
+<li>First create a folder named <em>metagenomics_course</em> (no spaces!) somewhere in your computer. This will be our working directory, that is, where we store the data we will use later on with RStudio.</li>
 <li>Go to <a href="https://www.mg-rast.org/">https://www.mg-rast.org/</a></li>
 <li>Click <em>download</em></li>
 <li>Click <em>search website</em></li>
@@ -64,7 +64,7 @@ Department of Microbiology, UH<br>
 <p><strong>DISCLAIMER:</strong> The only way to become proficient in R is by typing, making mistakes and trying again. So I strongly advise that in the examples given below you type the commands instead of copying and pasting them. You have been warned!</p>
 <p><strong>DISCLAIMER 2:</strong> R (as many other programming languages) is <em>case-sensitive</em>. That means that <em>a</em> and <em>A</em> are treated as different symbols, so pay attention when you’re typing!</p>
 <p>In this activity we will do some basic operations to get a feeling of how R works. We start by, of course, launching RStudio.</p>
-<p>We will now do some simple calculations and assignments. In the console, type:</p>
+<p>We will now do some simple calculations and assignments. In the RStudio console, type and press <em>ENTER</em>:</p>
 <pre><code>3*5+10 
 </code></pre>
 <p>Take a look at the ouput. What has happened? Pretty obvious, no?</p>
@@ -76,13 +76,13 @@ area &lt;- pi * radius^2
 <pre><code>radius
 area
 </code></pre>
-<p>What has the command <em>area &lt;- pi * radius^2</em> has done? How does the syntax work? What does the characters * and <em>^2</em> denote? Finally, what would happen if you assign another value to the variable <em>radius</em>? Try it and see it for yourself!</p>
+<p>What has the command <em>area &lt;- pi * radius^2</em> done? Can you understand how the syntax works? What does the characters * and <em>^2</em> denote? Finally, what would happen if you assign another value to the variable <em>radius</em>? Try it and see it for yourself!</p>
 <p>We will now use the built-in function <em>rnorm()</em> to create two  variables (<em>x</em> and <em>y</em>). In the console, type:</p>
 <pre><code>x = rnorm(50)
 y = rnorm(x)
 </code></pre>
 <p>Once again, the <em>Environment</em> tab now contains these two new variables. To see what they are, again simply type their name in the console. Can you understand what the command <em>rnorm</em> has done? HINT: try typing <em>help(rnorm)</em></p>
-<p>In addition to the <em>help()</em> function, there is a lot of content out there to guide you on using R and discovering new tools. For example, take a look at one <em>cheat sheet</em> developed by RStudio: <a href="https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf">https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf</a></p>
+<p>In addition to the <em>help()</em> function, there is a lot of content out there to guide you on using R and discovering new tools. For example, take a look at one cheat sheet developed by RStudio: <a href="https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf">https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf</a></p>
 <p>Now, using what we have learned so far and taking a look at the cheat sheet, see if you can figure out yourself how to do the following basic tasks:</p>
 <ol>
 <li>Calculate the circumference of a circle</li>
@@ -95,11 +95,12 @@ y = rnorm(x)
 <li><a href="https://kannu.csc.fi/s/Xk2jIQT7wiB3H1c/download">https://kannu.csc.fi/s/Xk2jIQT7wiB3H1c/download</a></li>
 </ul>
 <h3 id="activity-3-plotting-metagenomic-profiles-in-rstudio">Activity 3: Plotting metagenomic profiles in RStudio</h3>
-<p>We then need to tell RStudio where our working directory is located. This is the <em>metagenomics_course</em> folder where we have put the data we downloaded from MG-RAST in the previous activity.</p>
-<p>To do this, we will use the <em>setwd()</em> function. Simply type the command below in the RStudio console  and press <em>ENTER</em>:</p>
+<p>We will now do some slightly more complicated operations. As I’ve mentioned before, learning R is a bit of a steep curve so I don’t expect that you will understand 100% of this in the short duration of our course. But hopefully it will give you an overview of the capabilities of R and it will entice you to keep learning!</p>
+<p>To make life easier for us, we will first work with two samples I have pre-selected for you. Go to <a href="https://github.com/igorspp/ELL-417/tree/data">https://github.com/igorspp/ELL-417/tree/data</a> and click <em>Clone or download &gt; Download ZIP</em>.  Unzip the file and move the contents to your <em>metagenomics_course</em> folder.</p>
+<p>With RStudio open, we now need to tell it where our working directory is located. This is the <em>metagenomics_course</em> folder you created in the previous activity and which contains the data we will analyse. To do this, we will use the <em>setwd()</em> function. Simply type the command below in the RStudio console and hit <em>ENTER</em>:</p>
 <pre><code>setwd("&lt;Path to the metagenomics_course folder&gt;")
 </code></pre>
-<p>Change <em>&lt;Path to the metagenomics_course folder&gt;</em> to the FULL address where the metagenomics_course folder is located. Something along these lines:</p>
+<p>Change <em>&lt;Path to the metagenomics_course folder&gt;</em> to the FULL address where the metagenomics_course folder is located. Something along these lines (remember to change to the actual location of the folder in YOUR computer):</p>
 <pre><code># On Windows:
 setwd("C:/Documents and Settings/metagenomics_course")
 # On Mac:
@@ -107,5 +108,53 @@ setwd("~/Desktop/metagenomics_course")
 </code></pre>
 <p>If you are having trouble setting your working directory, do not panic, there is an easier way to do this. <em>But remember, you only learn R by using it (and typing) extensively, so only do it this way if you have tried the command above without success.</em> In the RStudio menu bar (on the top of the window), click in <em>Session &gt; Set Working Directory &gt; Choose Directory</em>. In the window that popped up, navigate to your <em>metagenomics_course</em> folder, select it and click <em>Open</em>.</p>
 <p>Take a look at the console. What has happened? What we did here is simply a shortcut to the <em>setwd()</em> command. What appeared in the console is what you should have written in the first place.</p>
+<p>Now we have to install some R packages we need but that are not installed by default. We will use the package <em>reshape2</em> for data manipulation and <em>ggplot2</em> for plotting the graphs. In the console, type:</p>
+<pre><code>install.packages("reshape2")
+install.packages("ggplot2")
+</code></pre>
+<p>Wait until the installation has finished. It will give some warnings in red, but these can be ignored for the time being. The next step now is to load the newly-installed packages (this has to be redone everytime you quit RStudio):</p>
+<pre><code>library(reshape2)
+library(ggplot2)
+</code></pre>
+<p>We will now import the data from MG-RAST using the <em>read.table</em> function. You will see now that the commands we use start to be slightly more complex, with many options (also called <em>arguments</em>). Take a moment to inspect the command below:</p>
+<pre><code>mgs636528_phylum &lt;- read.table("mgs636528_phylum.csv", header = TRUE, sep = "\t")
+</code></pre>
+<p>The first argument to the <em>read.table()</em> function is the file we want to import; <em>header = TRUE</em> tells RStudio that our columns have names (in this case, the phyla names); and <em>sep = “\t”</em> tells RStudio that the columns are separated by tabs (in some cases, it can be commas). Now that you understand the command, type it in the console.</p>
+<p>The command below is used to transform our data to relative abundances. This will be important after when we will compare multiple samples. If the number of sequences you are analysing for each sample is different, they cannot be easily compared. Dividing the phyla abundances by the total number of sequences (that is, transforming to relative abundances) is a way to circumvent this.</p>
+<pre><code>mgs636528_phylum &lt;- sweep(mgs636528_phylum, 1, rowSums(mgs636528_phylum), "/")
+</code></pre>
+<p>Take a look at the <em>mgs636528_phylum</em> variable. How is the data organised? Unfortunately this is not good for plotting so we need to change the way it is organised. We will use the function <em>melt()</em> for this:</p>
+<pre><code>mgs636528_phylum &lt;- melt(mgs636528_phylum)
+</code></pre>
+<p>Inspect the <em>mgs636528_phylum</em> variable again. Can you see what has changed?</p>
+<p>We have many phyla in our metagenomes, many of them present at very low abundances. With the command below, we will select only the abundant groups, those which are present at more than 1% relative abundance, so that the graph looks nicer in the end:</p>
+<pre><code>mgs636528_phylum &lt;- mgs636528_phylum[mgs636528_phylum$value &gt; 0.01, ]
+</code></pre>
+<p>And now, finally, we get to plot the results! For this we will use <em>ggplot()</em>. Just type the command below in the console:</p>
+<pre><code>ggplot(mgs636528_phylum, aes(x = variable, y = value)) + 
+	geom_bar(stat = "identity") 
+</code></pre>
+<p>Hmmm, things are a bit messy aren’t they? With one additional line of code, we quickly solve this issue:</p>
+<pre><code>ggplot(mgs636528_phylum, aes(x = variable, y = value)) +
+	geom_bar(stat = "identity")  + 
+	theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+</code></pre>
+<p>And there we go! Now we will do the same for the second sample. OK, at this point you can copy and past the commands below, as they are exactly the same as the ones we have just used. The only difference, of course, is the sample name. Go ahead, indulge yourself and copy the commands below and paste it in the console. But please, do it one line at a time, so if something goes wrong, it is easier to deal with it.</p>
+<pre><code>mgs636513_phylum &lt;- read.table("mgs636513_phylum.csv", header = T, sep = "\t")
+mgs636513_phylum &lt;- sweep(mgs636513_phylum, 1, rowSums(mgs636513_phylum), "/")
+mgs636513_phylum &lt;- melt(mgs636513_phylum)
+mgs636513_phylum &lt;- mgs636513_phylum[mgs636513_phylum$value &gt; 0.01, ]
+ggplot(mgs636513_phylum, aes(x = variable, y = value)) +
+	geom_bar(stat = "identity")  + 
+	theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+</code></pre>
+<p>Now we will combine the results from both samples and plot them together:</p>
+<pre><code>mgs636528_phylum$Sample &lt;- "mgs636528"
+mgs636513_phylum$Sample &lt;- "mgs636513"
+all_phylum &lt;- rbind(mgs636513_phylum, mgs636528_phylum)
+ggplot(all_phylum, aes(x = variable, y = value)) +
+	geom_bar(aes(fill = Sample), stat = "identity", position = "dodge")  + 
+	theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+</code></pre>
 <p>See wrangling wit R pdf</p>
 
