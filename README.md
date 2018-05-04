@@ -66,7 +66,7 @@ Department of Microbiology, UH<br>
 <pre><code>3*5+10 
 </code></pre>
 <p>Take a look at the ouput. What has happened? Pretty obvious, no?</p>
-<p>Now we will calculate the area of a circle with radius 10. For this, we will first create an object called <em>radius</em>, and assign it the value of 10. Then, we will calculate the area of a circle and store the results on another object we will call <em>area</em>. In the console, type (one line at a time):</p>
+<p>Now we will calculate the area of a circle with a radius of 10. For this, we will first create an object called <em>radius</em>, and assign it the value of 10. Then, we will calculate the area of a circle and store the results on another object we will call <em>area</em>. In the console, type (one line at a time):</p>
 <pre><code>radius &lt;- 10
 area &lt;- pi * radius^2
 </code></pre>
@@ -76,7 +76,7 @@ area
 </code></pre>
 <p>What has the command <em>area &lt;- pi * radius^2</em> done? Can you understand how the syntax works? What does the characters * and <em>^2</em> denote? Finally, what would happen if you assign another value to the object <em>radius</em>? Try it and see it for yourself!</p>
 <p>We will now do some slightly more complicated operations. As it is mentioned in the disclaimer above, learning R is a bit of a steep curve so don’t be upset if you don’t understand 100% of what is happening. This brief introduction is intended to  give you an overview of the capabilities of R and hopefully will entice you to keep learning!</p>
-<p>Now for some real metagenome analyses! To make life easier for us, we will first work with two samples I have pre-selected for you. Go to <a href="https://github.com/igorspp/ELL-417/tree/data">https://github.com/igorspp/ELL-417/tree/data</a> and click <em>Clone or download &gt; Download ZIP</em>.  Unzip the file and move the contents to your <em>metagenomics_course</em> folder.</p>
+<p>Now for some real metagenome analyses. To make life easier for us, we will first work with two samples I have pre-selected for you. Go to <a href="https://github.com/igorspp/ELL-417/tree/data">https://github.com/igorspp/ELL-417/tree/data</a> and click <em>Clone or download &gt; Download ZIP</em>.  Unzip the file and move the contents to your <em>metagenomics_course</em> folder.</p>
 <p>We now need to tell it where our working directory is located. This is the <em>metagenomics_course</em> folder you created in the previous activity and which contains the data we will analyse. In the RStudio menu bar (on the top of the window), click in <em>Session &gt; Set Working Directory &gt; Choose Directory</em>. In the window that popped up, navigate to your <em>metagenomics_course</em> folder, select it and click <em>Open</em>.</p>
 <p>Now we have to install some R packages we need but that are not installed by default. We will use the package <em>reshape2</em> for data manipulation and <em>ggplot2</em> for plotting the graphs. In the console, type:</p>
 <pre><code>install.packages("reshape2")
@@ -89,22 +89,19 @@ library(ggplot2)
 <p>We will now import the data we downloaded from MG-RAST using the <em>read.table()</em> function. You will see now that the commands start to be slightly more complex, with many options (also called <em>arguments</em>). Take a moment to inspect the command below:</p>
 <pre><code>mgs636528_phylum &lt;- read.table("mgs636528_phylum.csv", header = TRUE, sep = "\t")
 </code></pre>
-<p>The first part (left of the &lt;- symbol) tells RStudio that we want to create an object called <em>mgs636528_phylum</em>. Then, we type the name of the function we want to use – <em>read.table()</em> – and inside the parenthesis we pass additional arguments. The first argument is the name of the file we want to import; <em>header = TRUE</em> tells RStudio that our columns have names (in this case, the phyla names); and <em>sep = “\t”</em> tells RStudio that the columns are separated by tabs. This is needed because, in some cases, data can be organised so that columns are delimited by commas or semi-colons. Now that you understand a bit better the command, type it in the console and hit <em>ENTER</em>.</p>
+<p>The first part (left of the &lt;- symbol) tells RStudio that we want to create an object called <em>mgs636528_phylum</em>. Then, we type the name of the function we want to use – <em>read.table()</em> – and inside the parenthesis we pass additional arguments. The first argument is the name of the file we want to import; <em>header = TRUE</em> tells RStudio that our columns have names (in this case, the phyla names); and <em>sep = “\t”</em> tells RStudio that the columns are separated by tabs. This is needed because, in some cases, data can be organised so that columns are delimited by commas, semi-colons or spaces. Now that you understand a bit better the command, type it in the console and hit <em>ENTER</em>. It will give a warning message in R but we can ignore it for the time being. Just make sure that the object <em>mgs636528_phylum</em> we have created is visible in the <em>Environment</em> tab. Take a look at the object (simply type its name in the console and hit <em>ENTER</em>) to see how the data we will analyse looks like.</p>
 <p>The command below is used to transform our data to relative abundances. This will be important after, when we will compare multiple samples. If the number of sequences we are analysing for each sample is different, they cannot be easily compared. Dividing the abundance of each phyla by the total number of sequences in the sample (that is, transforming to relative abundances) is a way to circumvent this.</p>
 <pre><code>mgs636528_phylum &lt;- sweep(mgs636528_phylum, 1, rowSums(mgs636528_phylum), "/")
 </code></pre>
-<p>Take a look at the object <em>mgs636528_phylum</em>. Remember, all you have to do is type its name in the console:</p>
-<pre><code>mgs636528_phylum
-</code></pre>
-<p>How is the data organised? This is a typical dataframe, where each column is a variable (in our case, phyla) and each row an observation (in our case, samples). Unfortunately this is not good for plotting. To change how the data is structured so we can plot it, we will use the function <em>melt()</em>:</p>
+<p>Take a look again at the object <em>mgs636528_phylum</em>. What has changed after you typed in the command above? Also, how is the data organised? This is a typical R data frame (table), where each column is a variable (in our case, phyla) and each row an observation (in our case, samples). Unfortunately this is not good for plotting. To change how the data is structured so we can plot it after, we will use the function <em>melt()</em>:</p>
 <pre><code>mgs636528_phylum &lt;- melt(mgs636528_phylum)
 </code></pre>
-<p>Inspect the object <em>mgs636528_phylum</em> again. Can you see what has changed?</p>
+<p>Inspect the object <em>mgs636528_phylum</em> again. What has changed?</p>
 <p>Now, we have many phyla in our metagenomes, many of them that are present at very low abundances. This will pollute our graphs a bit, and we won’t be able to see the differences that really matter. With the command below, we will select only the abundant groups, those which are present at more than 1% relative abundance:</p>
 <pre><code>mgs636528_phylum &lt;- mgs636528_phylum[mgs636528_phylum$value &gt; 0.01, ]
 </code></pre>
 <p>Don’t freak out if the command above scares you, we don’t need to understand it 100% at the moment. But please, take one minute and try to figure out what it is doing.</p>
-<p>And now, finally, we get to plot the results! For this we will use the <em>ggplot</em> package we installed in the beginning of this exercise. Just type the command below in the console:</p>
+<p>And now, finally, we get to plot the data! For this we will use the <em>ggplot</em> package we installed in the beginning of this exercise. Just type the command below in the console:</p>
 <pre><code>ggplot(mgs636528_phylum, aes(x = variable, y = value)) + 
 	geom_bar(stat = "identity") 
 </code></pre>
@@ -113,8 +110,8 @@ library(ggplot2)
 	geom_bar(stat = "identity")  + 
 	theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
 </code></pre>
-<p>We can add many more features to the graph: we can add colors, change the title of the axes, add some text; the sky is the limit! But for the moment we will keep it like this.</p>
-<p>Now we will do the same for the second sample. OK, at this point you can copy and past the commands below, as they are exactly the same as the ones we have just used. The only difference, of course, is the sample name. Go ahead, indulge yourself and copy the commands below and paste them in the console. But please, do it one line at a time, so if something goes wrong, it makes our life easier.</p>
+<p>We can add many more features to the graph: we can add colors, change the title of the axes, add some text; the sky is the limit! But for the moment we will keep it like this. If you want to find out a bit more on how to customise ggplots, you can take a look at this nice cheat sheet: <a href="https://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet-2.0.pdf">https://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet-2.0.pdf</a></p>
+<p>Now we will do the same for the remaining sample. OK, at this point you can copy and past the commands below, as they are exactly the same as the ones we have just used. The only difference, of course, is the name of the file we are importing and the name we are giving to the R object we are creating. In other words, each sample will have a different name. Go ahead, indulge yourself and copy the commands below and paste them in the console. But please, do it one line at a time, so if something goes wrong, it will be easier to understand why.</p>
 <pre><code>mgs636513_phylum &lt;- read.table("mgs636513_phylum.csv", header = T, sep = "\t")
 mgs636513_phylum &lt;- sweep(mgs636513_phylum, 1, rowSums(mgs636513_phylum), "/")
 mgs636513_phylum &lt;- melt(mgs636513_phylum)
@@ -127,6 +124,7 @@ ggplot(mgs636513_phylum, aes(x = variable, y = value)) +
 <pre><code>mgs636528_phylum$Sample &lt;- "mgs636528"
 mgs636513_phylum$Sample &lt;- "mgs636513"
 </code></pre>
+<p>What this command is doing is telling R that we want to create a new column (denoted by the <em>$</em> symbol) called <em>Sample</em> inside our data frame <em>mgs636528_phylum</em>. This column will consist of the name of the sample, which is the string (text) we are giving in the right-hand side of the command. See how the commands are different for each sample?</p>
 <p>And now we will combine both datasets into one new object we will call <em>phylum_merged</em>. For this we will use the function <em>rbind()</em>:</p>
 <pre><code>phylum_merged &lt;- rbind(mgs636513_phylum, mgs636528_phylum)
 </code></pre>
