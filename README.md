@@ -134,7 +134,7 @@ mgs636513_phylum$Sample &lt;- "mgs636513"
 	geom_bar(aes(fill = Sample), stat = "identity", position = "dodge")  + 
 	theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
 </code></pre>
-<p>Take a look at the graph. What is/are the most abundant microbial groups in the samples?</p>
+<p>Take a look at the graph. What is/are the most abundant microbial groups in the samples? Are there differences between the two samples?</p>
 <p>Now, it is time to take this to take this to the next level and work with the data you downloaded yourself from MG-RAST. First we will erase everything and start from scratch, so that there is no conflict between the new and the old data. To do this, type:</p>
 <pre><code>rm(list = ls())
 </code></pre>
@@ -155,7 +155,7 @@ ggplot(phylum_merged, aes(x = variable, y = value)) +
 	geom_bar(aes(fill = Sample), stat = "identity", position = "dodge")  + 
 	theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
 </code></pre>
-<p>Again, take a look at the graph. What is/are the most abundant microbial groups in the samples? Take a quick look around the room and check the results from your colleagues. Are there any differences in microbial community composition between the environments you and your colleagues have analysed?</p>
+<p>Again, take a look at the graph. What is/are the most abundant microbial groups in the samples? Go around the room and check the results from your colleagues. Are there any differences in microbial community composition between the environments you and your colleagues have analysed? What are them? Remember to consider the metadata! What are the samples you are analysing from? And your colleagues’? Do you think that the differences you are seeing are due to what?</p>
 <p>If you have time left, why not investigate the functional composition of the metagenomes? Simply redo everything from the top, but this time work with the <em>mgmXXXXXX_subsystems.csv</em> files, which contains the functional annotations. And remember to change the variable names as well!</p>
 <h2 id="final-remarks">Final remarks</h2>
 <p>This was a <em>very</em> basic introduction to R and how to use it to analyse metagenome data. If you want to learn more, I recommend the material below as good starting points. But remember, you only learn R by using it!</p>
@@ -163,6 +163,5 @@ ggplot(phylum_merged, aes(x = variable, y = value)) +
 <li><a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf</a></li>
 <li><a href="https://kannu.csc.fi/s/Xk2jIQT7wiB3H1c/download">https://kannu.csc.fi/s/Xk2jIQT7wiB3H1c/download</a></li>
 <li><a href="https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf">https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf</a></li>
-<li><a href="https://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet-2.0.pdf">https://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet-2.0.pdf</a></li>
 </ul>
 
