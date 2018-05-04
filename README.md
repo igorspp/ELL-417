@@ -9,7 +9,7 @@ Department of Microbiology, UH<br>
 <li>45’ – Overview of metagenomics</li>
 <li>30’ – Activity 1</li>
 <li>15’ – Break</li>
-<li>15’ – Overview of R</li>
+<li>15’ – Overview of R and RStudio</li>
 <li>60’ – Activity 2</li>
 <li>15’  – Conclusion</li>
 </ul>
